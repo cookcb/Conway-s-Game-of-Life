@@ -1,0 +1,47 @@
+#grid{
+    height: 775px;
+    width: 775px;
+    border: thin solid black;
+}
+
+#grid tr{
+    
+    border: 0px solid black;  
+   
+}
+#grid td{
+    background-color: #FF0000;
+    border: 0px solid black;   
+}
+#Rules table{
+   border: thin solid black;
+   margin-top: 20px;    
+    
+}
+#Rules {
+ float: left;   
+ width: 300px;
+ background-color: #C3C3C3;  
+ font-family:sans-serif;
+ font-weight: bold;
+}
+#Rules button{ 
+   margin-top: 20px; 
+}
+
+#Rules label{
+ display: block;
+ margin-top: 30px;
+    
+}
+#Rules Controls {
+    float: left;
+    width: 30%;
+}
+#Controls  select{
+    margin-top: 20px;
+}
+h1, h2 {
+    text-align: left;
+    font-family:sans-serif;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Game of Life</title>
+        <link rel="stylesheet" type="text/css" href="a2.css">
+        <script src="jquery-1.11.3.js"></script>
+        <script type="text/javascript" src="a2.js"></script>
+        <script type="text/javascript" src="functions.js"></script>
+        
+    </head>
+    <body>
+            <h1>Conway's Game of Life</h1>
+            <h2>Christian Cook, Comp 426</h2>
+            <div id = "Rules">
+                <label>Width:<input type = "number" id = "width-input"></label>
+                <label>Height:<input type = "number" id = "height-input"></label>
+                
+                <label>Radius: 0<input type = "range" id = "radius-input" min = "0" max = "10"> 10</label>
+                <label>Death By Over population Threshold:<input type = "number" id = "OverPopulation-input"></label>
+                <label>Death By Lonliness Threshold:<input type = "number" id = "Lonliness-input"></label>
+                <label>Generation Min:<input type = "number" id = "genMin-input"></label>
+                <label>Generation Max:<input type = "number" id = "genMax-input"></label>
+                <button id = "SaveRules"> Save Rules</button>
+                <button id = "record">Create Grid</button>
+                
+                <table id = "informationTable">
+                    <tbody>
+                        <tr><td>Width: </td><td id = "width_td"></td></tr>
+                        <tr><td>Height: </td><td id = "height_td"></td></tr>
+                        <tr><td>Radius: </td><td id = "radius_td"></td></tr>
+                        <tr><td>Over Population: </td><td id = "o_td"></td></tr>
+                        <tr><td>Lonliness: </td><td id = "l_td"></td></tr>
+                        <tr><td>gMin: </td><td id = "gMin_td"></td></tr>
+                        <tr><td>gMax: </td><td id = "gMax_td"></td></tr>
+                    </tbody>
+                </table>
+                
+                <div id = "Controls">
+                    
+                    <p id="Border">Border Options</p>
+                    <select id = "borderOptions">
+                        <option>Always Dead</option>
+                        <option>Always Alive</option>
+                        <option>Toroidal</option>
+                    </select>
+                    <div>
+                        <p>Speed</p>
+                        0<input type = "range" id = "Speed" min = "0" max = "1000"/>1000 (1 second)
+                    </div>
+                    <button id = "Clear">Clear</button>
+                    <button id = "Start">Start</button>
+                    <button id = "Stop">Stop</button>
+                    <button id = "Next">Next</button>
+                    <button id = "Random">Random</button>
+                </div>
+            </div>
+            <table id = "grid"></table>
+                
+            
+    </body>
+</html>
