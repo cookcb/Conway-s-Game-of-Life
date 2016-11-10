@@ -35,11 +35,8 @@ function randomize(rowNum, colNum, grid, model){
 function step(rowNum, colNum, grid, model, border, r, l, o, gMin, gMax){
     var now_alive = new Array();
     var now_dead = new Array();
-    //r = parseInt(r);
     for(i = 0; i < rowNum; i++){                       //Go through each cell
            for(j = 0; j < colNum; j++){
-               //i = parseInt(i);
-               //j = parseInt(j);
                var alive_count = 0;
                if(model[i][j] == "alive"){         //Initially alive cells                   
                    for(k = i - r; k <= i + r; k++){
